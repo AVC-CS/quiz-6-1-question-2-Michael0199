@@ -22,12 +22,12 @@ int writeFile(string T){
       double Salary;
 cout << "Enter the number of employees: ";
       cin >> N;
-      ofs << N;
+      ofs << N<<endl;
       for (int i = 0; i < N; i++) {
         cin >> ID >> Name >> Dep >> Salary;
-        ofs << ID << Name << Dep << Salary;
+        ofs << ID <<" "<< Name <<" "<< Dep <<" "<< Salary<<endl;
+      }
       ofs.close();
-}
 return N;
   }
 
@@ -47,7 +47,7 @@ int readFile(string T){
       ifs >> N;
       for (int i = 0; i < N; i++){
         ifs >> ID >> Name >> Dep >> Salary;
-        cout << ID << Name << Dep << Salary;
+        cout << ID <<" "<< Name <<" "<< Dep <<" "<< Salary<<endl;
   }
 return N;
 }
